@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class student {
+public:
+	string Name;
+	string Birth;
+	string Phone;
+	string Sity;
+	string Country;
+	string School;
+	string Sity_School;
+	string Sity_Country;
+	string group;
+
+	void vvod () {
+		cin >> Name >> Birth >> Phone >> Sity >> Country >> School >> Sity_School >> Sity_Country >> group;
+	 }
+	void print() {
+		cout << endl << Name << endl << Birth << endl << Phone << endl << Sity << endl << Country << endl << School << endl << Sity_School << endl << Sity_Country << endl << group;
+	}
+
+};
+int main()
+{
+	student student1 = student();
+	student1.vvod();
+	student1.print();
+}
